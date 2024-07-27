@@ -1,0 +1,91 @@
+:root {
+    --blueb: blue;
+    --bluef: white;
+
+    --bratb: #8ACE00;
+    --bratf: black;
+
+    --darkb: #1b1b1b;
+    --darkf: #ededed;
+}
+@font-face {
+    font-family: "Perandory";
+    src: url(perandory.woff2);
+}
+.blue {
+    background-color: var(--blueb);
+    color: var(--bluef);
+}
+.brat {
+    background-color: var(--bratb);
+    color: var(--bratf);
+}
+.dark {
+    background-color: var(--darkb);
+    color: var(--darkf);
+}
+html, html{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--blueb);
+    color: var(--bluef);
+    font-family: "Helvetica", sans-serif;
+}
+body {
+    width: 800px;
+    margin: 50px auto;
+    font-size: 32px;
+    text-align: justify;
+}
+a {
+    color: var(--bluef);
+}
+a:hover {
+    color: var(--bluef);
+}
+div {
+    font-family: monospace;
+    width: 100%;
+    text-align: center;
+}
+.cnt {
+    text-align: center;
+}
+.serif {
+    font-family: serif;
+}
+h4, b {
+    font-size: 40px;
+    font-family: "Perandory";
+    margin: 0px;
+}
+button {
+    background-color: transparent;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid var(--bluef);
+    font-size: 20px;
+    color: var(--bluef);
+}
+button.brat {
+    border: 2px solid var(--bratf);
+}
+sup {
+    font-size: 12px;
+}
+img {
+    width: 80%;
+}
+@media (max-width: 900px) {
+    body {
+        width: 80%;
+        font-size: 25px;
+    }   
+    img {
+        width: 90% !important;
+    }
+}
