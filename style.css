@@ -24,14 +24,13 @@
     background-color: var(--darkb);
     color: var(--darkf);
 }
-html, html{
+html{
     visibility: hidden;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 
-    color: var(--bluef);
     font-family: "Helvetica", sans-serif;
 }
 body {
@@ -57,12 +56,15 @@ div {
 .serif {
     font-family: serif;
 }
-h4, b {
+b {
     font-size: 40px;
-    font-family: "Perandory";
+    font-family: "Perandory", serif;
     margin: 0px;
 }
 button {
+    position: relative;
+    left: 0;
+    top: 0;
     background-color: transparent;
     width: 100px;
     border-radius: 100%;
