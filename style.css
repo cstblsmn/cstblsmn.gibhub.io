@@ -12,6 +12,7 @@
     font-family: "Perandory";
     src: url(perandory.woff2);
 }
+/* Themes */
 .blue {
     background-color: var(--blueb);
     color: var(--bluef);
@@ -24,6 +25,7 @@
     background-color: var(--darkb);
     color: var(--darkf);
 }
+/* Body */
 html{
     visibility: hidden;
     width: 100%;
@@ -39,16 +41,23 @@ body {
     font-size: 32px;
     text-align: justify;
 }
+div {
+    font-family: monospace;
+    width: 100%;
+    text-align: center;
+}
+.poetry p {
+    font-size: 22px;
+}
+.poetry img {
+    width: 60%;
+}
+/* Single tags */
 a {
     color: var(--bluef);
 }
 a:hover {
     color: var(--bluef);
-}
-div {
-    font-family: monospace;
-    width: 100%;
-    text-align: center;
 }
 .cnt {
     text-align: center;
@@ -56,7 +65,7 @@ div {
 .serif {
     font-family: serif;
 }
-b {
+h2 {
     font-size: 40px;
     font-family: "Perandory", serif;
     margin: 0px;
@@ -71,9 +80,23 @@ button {
     border: 2px solid var(--bluef);
     font-size: 20px;
     color: var(--bluef);
+    cursor: pointer;
+}
+/* Button */
+button:hover {
+    background-color: var(--bluef);
+    color: var(--blueb);
 }
 button.brat {
     border: 2px solid var(--bratf);
+}
+button.brat:hover {
+    background-color: var(--bratf);
+    color: var(--bratb);
+}
+button.dark:hover {
+    background-color: var(--darkf);
+    color: var(--darkb);
 }
 sup {
     font-size: 12px;

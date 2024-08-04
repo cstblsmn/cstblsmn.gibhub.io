@@ -10,15 +10,30 @@
 <body>
     <button class="toggle-button" onclick="cycleTheme()">✱✱✱</button>
    <main class="cnt">
-    <b >Exodus π</b><br>
+    <h2>Exodus π</h2>
     "אֶֽהְיֶ֖ה אֲשֶׁ֣ר אֶֽהְיֶ֑ה"<br>
     "Εγώ εἰμι ὁ ὤν"<br>
     "I am who I am"
-     <br><br>
-     <div>
-         [<a href="index.html">home</a>]
-     </div>
-   </main>
+    <p>
+        <span id="age"></span> days old.
+    </p>
+    <div>
+        [<a href="index.html">home</a>]
+    </div>
+</main>
+
 </body>
 </html>
 <script src="themes.js"></script>
+<script>
+    const specificDate = new Date(2005, 4, 16);
+
+    function updateDays() {
+            const now = new Date();
+            const oneDay = 24 * 60 * 60 * 1000;
+            const daysPassed = Math.floor((now - specificDate) / oneDay);
+            document.getElementById('age').textContent = daysPassed;
+        }
+
+        updateDays();
+</script>
